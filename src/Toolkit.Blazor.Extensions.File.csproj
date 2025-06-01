@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageId>Snail.Toolkit.Blazor.Extensions.File</PackageId>
+        <PackageTags>File</PackageTags>
+        <Title>Toolkit.Blazor.Extensions.File</Title>
+        <Authors>Toolkit</Authors>
+        <Description>Extension for the framework Blazor</Description>
+        <RepositoryUrl>https://github.com/orldev/Toolkit.Blazor.Extensions.File</RepositoryUrl>
+        <Copyright>Toolkit, 2023</Copyright>
+        <PackageProjectUrl>https://github.com/orldev/Toolkit.Blazor.Extensions.File</PackageProjectUrl>
+        <RepositoryType>GitHub</RepositoryType>
+        <!-- SourceLink specific details: https://github.com/dotnet/sourcelink/blob/master/README.md -->
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+    <ItemGroup>
+        <SupportedPlatform Include="browser"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="**/*.razor.css" Pack="false" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.5" />
+        <PackageReference Include="System.Reactive" Version="6.0.1" />
+    </ItemGroup>
+
+</Project>
