@@ -20,18 +20,18 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
     <ItemGroup>
-        <SupportedPlatform Include="browser"/>
+        <SupportedPlatform Include="browser" />
     </ItemGroup>
     <ItemGroup>
         <None Update="**/*.razor.css" Pack="false" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.5" />
-        <PackageReference Include="System.Reactive" Version="6.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.11" />
+        <PackageReference Include="System.Reactive" Version="6.1.0" />
     </ItemGroup>
 
 </Project>
